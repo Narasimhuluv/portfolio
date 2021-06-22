@@ -8,18 +8,22 @@
     }
   }
   section {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .left {
     width: 25%;
-    height: 65vh;
+    // height: 65vh;
     margin-left: 15rem;
+    border-radius: 1rem;
     border: 3px dotted white;
-    padding: 2rem;
+    padding: 1rem;
+    // background-color: white;
     img {
-      width: 120%;
+      width: 110%;
       border-radius: 1rem;
-      transform: translateY(-10px);
+      transform: translateY(10px);
+      margin-left: 1rem;
+      position: relative;
     }
   }
 

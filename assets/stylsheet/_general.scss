@@ -88,7 +88,6 @@ section {
     margin: 2rem;
     padding: 1rem;
     width: 20%;
-    height: 58vh;
     margin-top: 7rem;
     border: 2px dashed black;
     img {
@@ -96,8 +95,42 @@ section {
       border-radius: 1rem;
       transform: translateX(-120px);
       margin-top: 0rem;
-      //   transform: translateX(-80px);
-      //   margin-top: 10rempx;
+    }
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1156px) {
+  html {
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 980px) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 11px;
     }
   }
 }

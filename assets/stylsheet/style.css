@@ -326,7 +326,6 @@ section .right_image {
   margin: 2rem;
   padding: 1rem;
   width: 20%;
-  height: 58vh;
   margin-top: 7rem;
   border: 2px dashed black;
 }
@@ -337,6 +336,42 @@ section .right_image img {
   -webkit-transform: translateX(-120px);
           transform: translateX(-120px);
   margin-top: 0rem;
+}
+
+@media screen and (max-width: 1570px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1156px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1156px) and (max-width: 980px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1156px) and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
 }
 
 .about {
@@ -350,22 +385,24 @@ section .right_image img {
 }
 
 .about section {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .about .left {
   width: 25%;
-  height: 65vh;
   margin-left: 15rem;
+  border-radius: 1rem;
   border: 3px dotted white;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .about .left img {
-  width: 120%;
+  width: 110%;
   border-radius: 1rem;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  margin-left: 1rem;
+  position: relative;
 }
 
 .about .right {
@@ -421,7 +458,7 @@ section .right_image img {
 
 .portfolio section img,
 .portfolio section video {
-  width: 500px;
+  width: 400px;
   margin: 0.5rem;
   border-radius: 0.5rem;
 }
