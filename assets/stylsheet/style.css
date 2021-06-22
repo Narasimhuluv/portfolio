@@ -363,6 +363,7 @@ section .right_image img {
 
 .about .left img {
   width: 120%;
+  border-radius: 1rem;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
