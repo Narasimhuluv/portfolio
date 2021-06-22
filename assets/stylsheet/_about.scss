@@ -1,0 +1,60 @@
+.about {
+  background: rgb(71, 71, 71);
+  width: 100%;
+  height: 100vh;
+  header {
+    a {
+      color: white;
+    }
+  }
+  section {
+    margin-top: 5rem;
+  }
+  .left {
+    width: 25%;
+    height: 65vh;
+    margin-left: 15rem;
+    border: 3px dotted white;
+    padding: 2rem;
+    img {
+      width: 120%;
+      transform: translateY(-10px);
+    }
+  }
+
+  .right {
+    width: 35%;
+    color: white;
+    padding: 0 8rem;
+    margin-right: 10rem;
+    // border: 1px solid white;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    .language {
+      margin: 2rem 0;
+      line-height: 1.2;
+      .empty_box {
+        width: 50%;
+        height: 4px;
+        border: 1px solid grey;
+        margin: 0.5rem 0;
+        .inside_box {
+          width: 90%;
+          height: 4px;
+          background-color: white;
+        }
+        .css_box {
+          width: 95%;
+        }
+      }
+    }
+    button {
+      a {
+        color: white;
+      }
+    }
+  }
+}

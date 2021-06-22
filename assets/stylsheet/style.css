@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7))), url(../media/pics/video.gif) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7)), url(../media/pics/video.gif) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  -webkit-animation: animate 1s linear;
+          animation: animate 1s linear;
+}
+
+@-webkit-keyframes animate {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify_center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify_between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem;
+}
+
+header h2 {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: white;
+}
+
+header li {
+  margin-left: 1.5rem;
+}
+
+header li a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+section {
+  line-height: 2;
+}
+
+section h1 {
+  font-size: 3rem;
+  width: 100%;
+  height: 100px;
+  font-weight: 900;
+  -webkit-animation: heading 5s infinite;
+          animation: heading 5s infinite;
+  -webkit-transition: all 5s ease-in;
+  transition: all 5s ease-in;
+}
+
+@-webkit-keyframes heading {
+  0% {
+    width: 0%;
+    overflow: hidden;
+    opacity: 0%;
+  }
+  20% {
+    width: 30%;
+    overflow: hidden;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  50% {
+    width: 50%;
+    overflow: hidden;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  80% {
+    overflow: hidden;
+    width: 80%;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+}
+
+@keyframes heading {
+  0% {
+    width: 0%;
+    overflow: hidden;
+    opacity: 0%;
+  }
+  20% {
+    width: 30%;
+    overflow: hidden;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  50% {
+    width: 50%;
+    overflow: hidden;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  80% {
+    overflow: hidden;
+    width: 80%;
+    opacity: 100%;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+}
+
+section .content {
+  width: 40%;
+  margin-top: 7rem;
+  margin: 2rem;
+  font-weight: 900;
+}
+
+section .content nav ul {
+  margin-top: 1rem;
+}
+
+section .content nav ul a {
+  margin-right: 2rem;
+  color: black;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+section button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+section button a {
+  color: black;
+}
+
+section .right_image {
+  margin: 2rem;
+  padding: 1rem;
+  width: 20%;
+  height: 58vh;
+  margin-top: 7rem;
+  border: 2px dashed black;
+}
+
+section .right_image img {
+  width: 130%;
+  border-radius: 1rem;
+  -webkit-transform: translateX(-120px);
+          transform: translateX(-120px);
+  margin-top: 0rem;
+}
+
+.about {
+  background: #474747;
+  width: 100%;
+  height: 100vh;
+}
+
+.about header a {
+  color: white;
+}
+
+.about section {
+  margin-top: 5rem;
+}
+
+.about .left {
+  width: 25%;
+  height: 65vh;
+  margin-left: 15rem;
+  border: 3px dotted white;
+  padding: 2rem;
+}
+
+.about .left img {
+  width: 120%;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.about .right {
+  width: 35%;
+  color: white;
+  padding: 0 8rem;
+  margin-right: 10rem;
+}
+
+.about .right h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.about .right .language {
+  margin: 2rem 0;
+  line-height: 1.2;
+}
+
+.about .right .language .empty_box {
+  width: 50%;
+  height: 4px;
+  border: 1px solid grey;
+  margin: 0.5rem 0;
+}
+
+.about .right .language .empty_box .inside_box {
+  width: 90%;
+  height: 4px;
+  background-color: white;
+}
+
+.about .right .language .empty_box .css_box {
+  width: 95%;
+}
+
+.about .right button a {
+  color: white;
+}
+
+.portfolio {
+  background: #474747;
+  width: 100%;
+}
+
+.portfolio a {
+  color: white;
+}
+
+.portfolio section {
+  margin-top: 3rem;
+}
+
+.portfolio section img,
+.portfolio section video {
+  width: 500px;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.flex_wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact {
+  width: 40%;
+  margin-top: 10rem;
+  border: 1px dashed white;
+  padding: 2rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.contact button {
+  border: 1px solid white;
+}
+
+.contact button a {
+  color: palevioletred;
+}
+/*# sourceMappingURL=style.css.map */

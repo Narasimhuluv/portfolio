@@ -1,0 +1,20 @@
+.portfolio {
+  background: rgb(71, 71, 71);
+  width: 100%;
+  //   height: 100vh;
+  a {
+    color: white;
+  }
+  section {
+    margin-top: 3rem;
+    img,
+    video {
+      width: 500px;
+      margin: 0.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
